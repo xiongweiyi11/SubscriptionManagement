@@ -5,34 +5,20 @@
 This is my freshman C++ course, named magazine subscription management system, due to limited capacity, I would like to ask for your advice
 
 #### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+此项目主要依托QT和C++完成
 
 #### 使用说明
+使用计算机对杂志进行管理，这里是列表文本每个订户的信息包括：编号，姓名，性别，电话号码，杂志单位，订阅数，订阅期限（某年某月）
+具备以下功能：
+- 这里是列表文本添加功能：增加新订户，即将新订户的全部信息输入到文件中。
+- 这里是列表文本查询功能：可根据订户姓名、性别、单位对已添加的记录进行查询，如果未找到，给出相应的提示信息，如果找到，则显示相应的记录信息。
+- 这里是列表文本显示功能：可显示当前系统中所有记录，每条记录占据一行。
+- 这里是列表文本编辑功能：可根据查询结果对相应的记录进行修改，修改时注意编号的唯一性。
+- 这里是列表文本删除功能：根据当天的日期对新订户全部信息进行查询，删除已到期的订户记录
+- 这里是列表文本统计功能：能根据多种参数进行统计。能统计性别、订阅数、订阅期限信息等。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+### 备注
+此项目如有不足的地方，欢迎大家多多指正
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
