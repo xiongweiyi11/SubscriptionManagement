@@ -74,7 +74,7 @@ void addSubscriberDialog::on_confirmButton_released()
     }
 
     //以下代码用于判断编号是否唯一
-    QFile fileNum("file_num.txt");
+    QFile fileNum("C:\\QT_Document\\SubscriptionManagement\\file_num.txt");
     fileNum.open(QIODevice::ReadOnly);
      QTextStream streamNum(&fileNum);
     QString line ;

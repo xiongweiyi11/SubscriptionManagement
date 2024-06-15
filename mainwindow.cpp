@@ -34,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(edi,&editDialog::sig_editSub,this,&MainWindow::slot_editSub);
 
-    loadData("file.txt");
+    loadData("C:\\QT_Document\\SubscriptionManagement\\file.txt");
 
     //设置表格数据不能被选中修改
     ui->viewTableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
@@ -50,7 +50,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::loadData(const QString &filename)  //加载数据
 {
-    QFile fileNum("file_num.txt");
+    QFile fileNum("C:\\QT_Document\\SubscriptionManagement\\file_num.txt");
 
     if (!fileNum.open(QIODevice::WriteOnly | QIODevice::Text)) {
         qDebug() << "打开文件失败";
@@ -109,9 +109,9 @@ void MainWindow::on_viewButton_released()
     ui->stackedWidget1->setCurrentWidget(ui->viewPage);
 
     m_subscribers.clear();
-    loadData("file.txt");
+    loadData("C:\\QT_Document\\SubscriptionManagement\\file.txt");
 
-    QFile fileNum("file_num.txt");
+    QFile fileNum("C:\\QT_Document\\SubscriptionManagement\\file_num.txt");
 
     if (!fileNum.open(QIODevice::WriteOnly | QIODevice::Text)) {
         qDebug() << "打开文件失败";
@@ -245,10 +245,10 @@ void MainWindow::on_saveButton_released()
         return;
     }
 
-    QFile file("file.txt");
+    QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
 
     //file_num 用于防止编号重复
-    QFile fileNum("file_num.txt");
+    QFile fileNum("C:\\QT_Document\\SubscriptionManagement\\file_num.txt");
 
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         qDebug() << "打开文件失败";
@@ -390,7 +390,7 @@ void MainWindow::on_editButton_2_clicked()
     {
         qDebug()<<number1;
         QList<Subscriber> m_subscribers1;    //保存所有subscriber
-        // QFile fileNum("file_num.txt");
+        // QFile fileNum("C:\\QT_Document\\SubscriptionManagement\\file_num.txt");
 
         // if (!fileNum.open(QIODevice::WriteOnly | QIODevice::Text)) {
         //     qDebug() << "打开文件失败";
@@ -398,7 +398,7 @@ void MainWindow::on_editButton_2_clicked()
         // }
 
         //QTextStream streamNum(&fileNum);
-        QFile file("file.txt");
+        QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
         //打开文件
         if(!file.open(QIODevice::ReadOnly))
         {
@@ -491,7 +491,7 @@ void MainWindow::on_search_clicked()
     //设置初始行号为0
     ui->viewTableWidget_2->setRowCount(0);
 
-    QFile file("file.txt");
+    QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
     //打开文件
     if(!file.open(QIODevice::ReadOnly))
     {
@@ -611,7 +611,7 @@ void MainWindow::on_delebtn_released() {
         return; // 如果用户选择 No，则直接返回
     }
 
-    QFile file("file.txt");
+    QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
     //打开文件
     if(!file.open(QIODevice::ReadOnly))
     {
@@ -718,7 +718,7 @@ void MainWindow::on_pushButton_clicked()
     //遍历所有订阅
 
 
-    QFile file("file.txt");
+    QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
     //打开文件
     if(!file.open(QIODevice::ReadOnly))
     {
@@ -821,7 +821,7 @@ void MainWindow::on_dele2Button_released()
         if (reply != QMessageBox::Yes) {
             return; // 如果用户选择 No，则直接返回
         }
-        QFile file("file.txt");
+        QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
         //打开文件
         if(!file.open(QIODevice::ReadOnly))
         {
@@ -862,7 +862,7 @@ void MainWindow::on_dele2Button_released()
     QString number2=m_subscribers1[number1].number;
     qDebug()<<number2;
 
-    QFile file1("file.txt");
+    QFile file1("C:\\QT_Document\\SubscriptionManagement\\file.txt");
 
 
     if (!file1.open(QIODevice::WriteOnly | QIODevice::Text)) {
@@ -943,24 +943,24 @@ void MainWindow::on_dele2Button_released()
 
     }
 
-    // //以下用于删除空白行及其行号
-    // for (int i = ui->viewTableWidget_2->rowCount() - 1; i >= 0; --i)
-    // {
-    //     bool isEmpty = true;
-    //     for (int j = 0; j < ui->viewTableWidget_2->columnCount(); ++j)
-    //     {
-    //         QTableWidgetItem *item = ui->viewTableWidget_2->item(i, j);
-    //         if (item && !item->text().trimmed().isEmpty())
-    //         {
-    //             isEmpty = false;
-    //             break;
-    //         }
-    //     }
-    //     if (isEmpty)
-    //     {
-    //         ui->viewTableWidget_2->removeRow(i);
-    //     }
-    // }
+    //以下用于删除空白行及其行号
+    for (int i = ui->viewTableWidget_2->rowCount() - 1; i >= 0; --i)
+    {
+        bool isEmpty = true;
+        for (int j = 0; j < ui->viewTableWidget_2->columnCount(); ++j)
+        {
+            QTableWidgetItem *item = ui->viewTableWidget_2->item(i, j);
+            if (item && !item->text().trimmed().isEmpty())
+            {
+                isEmpty = false;
+                break;
+            }
+        }
+        if (isEmpty)
+        {
+            ui->viewTableWidget_2->removeRow(i);
+        }
+    }
     ui->viewTableWidget_2->update(); // 刷新表格视图
 }
 

@@ -27,7 +27,7 @@ editDialog::~editDialog()
 
 void editDialog::initUI()
 {
-    QFile file("file.txt");
+    QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
     //打开文件
     if(!file.open(QIODevice::ReadOnly))
     {
@@ -131,7 +131,7 @@ void editDialog::initUI()
 
 void editDialog::on_confirmButton_released()
 {
-    QFile file("file.txt");
+    QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
     //打开文件
     if(!file.open(QIODevice::ReadOnly))
     {
@@ -177,7 +177,7 @@ void editDialog::on_confirmButton_released()
     }
 
     //以下代码用于判断编号是否唯一
-    QFile fileNum("C:\\QT_Document\\SubscriptionManagement\\file_num.txt");
+    QFile fileNum("C:\\QT_Document\\SubscriptionManagement\\C:\\QT_Document\\SubscriptionManagement\\file_num.txt");
     fileNum.open(QIODevice::ReadOnly);
     QTextStream streamNum(&fileNum);
     QString line ;
@@ -253,7 +253,7 @@ void editDialog::on_confirmButton_released()
 
 
 
-    QFile file1("file.txt");
+    QFile file1("C:\\QT_Document\\SubscriptionManagement\\file.txt");
 
 
     if (!file1.open(QIODevice::WriteOnly | QIODevice::Text)) {

@@ -42,7 +42,7 @@ void statisticDialog::on_confirmButton_released()
         ui->stackedWidget2->setCurrentWidget(ui->sexPage);
         qint32 i=0;
         qint32 j=0;
-        QFile file("file.txt");
+        QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
         //打开文件
         if(!file.open(QIODevice::ReadOnly))
         {
@@ -92,7 +92,7 @@ void statisticDialog::on_confirmButton_released()
     {
         ui->stackedWidget2->setCurrentWidget(ui->quantityPage);
         qint32 i=0;
-        QFile file("file.txt");
+        QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
         //打开文件
         if(!file.open(QIODevice::ReadOnly))
         {
@@ -176,7 +176,7 @@ void statisticDialog::on_data_confirmButton_released()
     QString str=ui->dateEdit->text();
     qDebug()<<str;
     qint32 i=0;
-    QFile file("file.txt");
+    QFile file("C:\\QT_Document\\SubscriptionManagement\\file.txt");
     //打开文件
     if(!file.open(QIODevice::ReadOnly))
     {
