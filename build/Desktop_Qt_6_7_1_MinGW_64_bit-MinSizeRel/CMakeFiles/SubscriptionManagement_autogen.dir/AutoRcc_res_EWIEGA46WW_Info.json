@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "C:/QT_Document/SubscriptionManagement/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/SubscriptionManagement_autogen",
+	"CMAKE_BINARY_DIR" : "C:/QT_Document/SubscriptionManagement/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/QT_Document/SubscriptionManagement/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/QT_Document/SubscriptionManagement",
+	"CMAKE_SOURCE_DIR" : "C:/QT_Document/SubscriptionManagement",
+	"INCLUDE_DIR" : "C:/QT_Document/SubscriptionManagement/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/SubscriptionManagement_autogen/include",
+	"INPUTS" : [ "C:/QT_Document/SubscriptionManagement/image/background.jpg" ],
+	"LOCK_FILE" : "C:/QT_Document/SubscriptionManagement/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/CMakeFiles/SubscriptionManagement_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "res" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_res.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.7.1/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/QT_Document/SubscriptionManagement/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel/CMakeFiles/SubscriptionManagement_autogen.dir/AutoRcc_res_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/QT_Document/SubscriptionManagement/res.qrc",
+	"VERBOSITY" : 0
+}

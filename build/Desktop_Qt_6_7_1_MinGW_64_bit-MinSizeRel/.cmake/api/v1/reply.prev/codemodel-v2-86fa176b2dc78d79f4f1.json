@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-163c7aa12e8a772048d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SubscriptionManagement",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "SubscriptionManagement::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SubscriptionManagement-MinSizeRel-9b5d57fcceacdba2622d.json",
+					"name" : "SubscriptionManagement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SubscriptionManagement_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SubscriptionManagement_autogen-MinSizeRel-1fe40e6009c5b3c389f6.json",
+					"name" : "SubscriptionManagement_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SubscriptionManagement_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SubscriptionManagement_autogen_timestamp_deps-MinSizeRel-55fd0acf77163268681e.json",
+					"name" : "SubscriptionManagement_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/QT_Document/SubscriptionManagement/build/Desktop_Qt_6_7_1_MinGW_64_bit-MinSizeRel",
+		"source" : "C:/QT_Document/SubscriptionManagement"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
